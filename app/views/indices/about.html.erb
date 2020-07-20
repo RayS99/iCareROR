@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcome</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>iCareInc</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="wrapper">
+            <!-- Sidebar Holder -->
+            <nav id="sidebar">
+                <div class="sidebar-header">
+                    <%= image_tag("stock11.bmp", :id => "grnimg", :alt => "rss feed") %>
+                </div>
+                <ul class="list-unstyled CTAs">
+                    <li><a href="/#">Home</a></li>
+                    <li><a href="/about">About Us</a></li>
+                    <li><a href="/mission">Our Mission</a></li>
+                    <li><a href="/services">HCS Services</a></li>
+                    <li><a href="/location">Location</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+<!--                 <ul class="list-unstyled components">
+                    <li class="active">
+                        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">PLACEHOLDER</a>
+                        <ul class="collapse list-unstyled" id="homeSubmenu">
+                    <li>
+                        <a href="#">PLACEHOLDER</a>
+                    </li>
+                    <li>
+                        <a href="#">PLACEHOLDER</a>
+                    </li>
+                </ul> -->
+            </nav>
+
+            <!-- Page Content Holder -->
+            <div id="content">
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+                                <i class="glyphicon glyphicon-align-left"></i>
+                                <span>Toggle Sidebar</span>
+                            </button>
+                            <h1>iCare Services, Inc.</h1>
+                        </div>
+
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="/#">Home</a></li>
+                                <li><a href="/about">About Us</a></li>
+                                <li><a href="/mission">Our Mission</a></li>
+                                <li><a href="/services">HCS Services</a></li>
+                                <li><a href="/location">Location</a></li>
+                                <li><a href="/contact">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+                <!-- <h2>PLACEHOLDER</h2>
+                <p></p> -->
+                <div class="line"></div>
+
+                <h2>About Us</h2>
+                <p class="tab">iCare Services, Inc. is contracted with the Department of Aging and Disability Services to provide Home and Community-Based Services (HCS) and Texas Home Living Services (TxHmL) in the DFW area and surrounding counties.
+
+                iCare also is contracted with Molina, Superior, Amerigroup and Cigna Health Spring to provide Community First Choice (CFC) services though the Medicaid Star + Plus recipients. This a new service that provides personal assistance and habilitation services in your home and the community. Please contact us for eligibility requirements and assistance in acquiring CFC services though your MCO.
+
+                For HCS and TxHmL services:
+                iCare Services, Inc., specializes in obtaining medical equipment, adaptive aids and minor home modifications in a timely manner.
+
+                Our experienced professionals will guide and assist you by providing specialized evaluations and required documentation needed to meet the needs of daily living.
+                Let our team of qualified professionals guide you in obtaining the appropriate approvals for your specialized needs.
+
+                iCare Services, also specializes in Level of Need (LON) increases to assure that the services that are provided meet you and your service providers needs! Together as a team, approved LON increases are possible with iCare Services as your advocating program provider.</p>
+
+                <div class="line"></div>
+                <h2>The Founder</h2>
+
+                <%= image_tag("ceo.png", :id => "causeimg", :alt => "rss feed") %>
+
+
+                <p class="tab">Ruddy Enriquez is Chief Executive Officer at iCare Services, Inc. He has oversight of all operations for iCare Services, Inc. In this capacity he leads the day-to-day activities as well as long-term planning in transforming the company to a leading consumer driven organization. He is also responsible for corporate quality assurance and development.
+
+                Enriquez began his Home and Community Services career in 1997 where he worked in providing direct care services and then as a Case Manager until 1999. He then assumed responsibility as a Service Coordinator Manager. 
+
+                Enriquez continued his career with DADS as an HCS Survey Reviewer. He then served as Director for two major HCS providers in San Antonio and Dallas. In these roles he was responsible for assisting other providers in providing the best quality services available and also assuring that the individuals in the program had the same rights and opportunities as those without disabilities. Enriquez is now Owner and Chief Executive Officer at iCare Services, Inc., an HCS provider. 
+
+                Enriquez is a graduate of the University of Texas Pan American, where he received his bachelor's degree in Public Relations in 1997.</p>
+
+                <div class="line"></div>
+            </div>
+        </div>
+
+	
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <!-- Bootstrap Js CDN -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+     <script type="text/javascript">
+         $(document).ready(function () {
+             $('#sidebarCollapse').on('click', function () {
+                 $('#sidebar').toggleClass('active');
+             });
+         });
+     </script>
+</body>
+</html>
