@@ -46,6 +46,7 @@ p {
  .tab {
  	text-indent:40px;
     color: #5f5f5f;
+    margin-top:40px;
  }
 // a {
 //     color: #0060B6;
@@ -211,6 +212,9 @@ a.article:hover {
     padding: 20px;
     min-height: 100vh;
     transition: all 0.3s;
+}
+.blockquote-footer {
+    color: #999999;
 }
 
 
