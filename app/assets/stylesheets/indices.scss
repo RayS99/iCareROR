@@ -46,7 +46,8 @@ p {
  .tab {
  	text-indent:40px;
     color: #5f5f5f;
-    margin-top:40px;
+    margin-top:20px;
+    //margin-top was default 40
  }
 // a {
 //     color: #0060B6;
@@ -95,6 +96,14 @@ a:focus {
     height: 1px;
     border-bottom: 1px dashed #ddd;
     margin: 40px 0;
+    text-align: center;
+}
+#loc {
+  display: inline-block;
+}
+#bizadd {
+    text-align: center;
+    
 }
 .gifimg {
 	width: 100%;
